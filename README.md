@@ -32,7 +32,7 @@ Using position mode guarantees the robot perfectly matches the angles given by I
 ros2 launch simulation_2dof simulation_2dof.launch.py controller_mode:=position
 
 # Or to test your PID loops later:
-# ros2 launch simulation_2dof simulation_2dof.launch.py controller_mode:=effort
+ros2 launch simulation_2dof simulation_2dof.launch.py controller_mode:=effort
 ```
 
 ---

@@ -1,7 +1,6 @@
 from launch import LaunchDescription
 from launch_ros.actions import Node
 
-
 def generate_launch_description():
     kalman_node = Node(
         package='kalman_filter',
@@ -11,13 +10,19 @@ def generate_launch_description():
         parameters=[
             {
                 'input_topic_link1': '/link1/ruido_imu',
-                'output_topic_link1': '/link1/imu_filtrada',
                 'input_topic_link2': '/link2/ruido_imu',
-                'output_topic_link2': '/link2/imu_filtrada',
-                'process_noise': 0.01,
-                'measurement_noise': 0.05,
+                'q_angle': 0.001,
+                'q_bias': 0.003,
+                'r_measure': 0.03,
             }
         ],
     )
 
-    return LaunchDescription([kalman_node])
+    comparison_node = Node(
+        package='kalman_filter',
+        executable='kalman_comparison_node',
+        name='kalman_comparison_node',
+        output='screen'
+    )
+
+    return LaunchDescription([kalman_node, comparison_node])

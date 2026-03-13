@@ -77,6 +77,9 @@ class ControlNode(Node):
         # You can now publish to this topic while the node is running.
         self.create_subscription(Point, '/target_coordinate', self.target_coordinate_callback, 10)
         
+        # Publisher for desired joint states (useful for plotting)
+        self.desired_joint_pub = self.create_publisher(JointState, '/desired_joint_states', 10)
+        
         # Setup publishers based on our control mode
         if self.mode == 'position':
             self.control_commands_publisher = self.create_publisher(Float64MultiArray, '/position_controller/commands', 10)
@@ -260,6 +263,13 @@ class ControlNode(Node):
         # Safety Check: Limit the maximum force we send so the robot doesn't swing too violently
         control_joint_1 = max(-self.max_effort, min(self.max_effort, control_joint_1))
         control_joint_2 = max(-self.max_effort, min(self.max_effort, control_joint_2))
+
+        # Publish the desired position for tracking and plotting
+        desired_msg = JointState()
+        desired_msg.header.stamp = self.get_clock().now().to_msg()
+        desired_msg.name = ['joint1', 'joint2']
+        desired_msg.position = [self.desired_joint_1, self.desired_joint_2]
+        self.desired_joint_pub.publish(desired_msg)
 
         # 5. Pack our calculated commands into a message and Publish it!
         control_msg = Float64MultiArray()

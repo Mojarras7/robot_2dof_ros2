@@ -22,7 +22,7 @@ setup(
     entry_points={
         'console_scripts': [
             'kalman_filter_node = kalman_filter.kalman_filter_node:main',
-            'plot_kalman_rosbag = kalman_filter.plot_kalman_rosbag:main',
+            'plot_comparison = kalman_filter.plot_comparison:main',
             'kalman_comparison_node = kalman_filter.kalman_comparison_node:main',
         ],
     },
