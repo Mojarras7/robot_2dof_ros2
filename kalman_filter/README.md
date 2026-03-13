@@ -68,7 +68,7 @@ This script uses `matplotlib` to plot side-by-side comparisons of the desired tr
 Here are the results of comparing our Kalman Filter estimations vs True States vs Desired Positions:
 
 ### Joint 1 Comparison
-![Comparison Link 1](images/comparacion_1.png)
+![Comparison Link 1](images/Comparacion_1.png)
 
 ### Joint 2 Comparison
-![Comparison Link 2](images/comparacion_2.png)
+![Comparison Link 2](images/Comparacion_2.png)
