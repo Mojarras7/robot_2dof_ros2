@@ -1,83 +1,40 @@
-
 # kalman_filter (ROS 2 Python)
 
-ROS 2 package to filter noisy IMU data for two links using a Kalman filter, then compare:
+ROS 2 package to filter noisy IMU data from a 2-DOF robotic arm using a Kalman Filter to accurately estimate joint angles by fusing the gyroscope and accelerometer.
 
-- `/link1/ruido_imu` vs `/link1/imu_filtrada`
-- `/link2/ruido_imu` vs `/link2/imu_filtrada`
-- `/joint_states` as reference
+This converts the independent raw sensor data (`/link1/ruido_imu` and `/link2/ruido_imu`) into clean, estimated joint positions output to `/kalman_joint_states`. 
 
 ## 1) Build
 
 ```bash
-cd $WORKSPACE
+cd ~/Documents/robot_2dof_ros2
 colcon build --packages-select kalman_filter
-source /install/setup.bash
+source install/setup.bash
 ```
 
-## 2) Run the Kalman filter node (launch file)
+## 2) Run the Kalman filter node
+
+Start the simulation first, then run the kalman filter:
 
 ```bash
-source /install/setup.bash
-ros2 launch kalman_filter dual_imu_kalman.launch.py
+source install/setup.bash
+ros2 run kalman_filter kalman_filter_node
 ```
 
-Default launch parameters:
+## 3) View the Live Results (Compare with Ground Truth)
 
-- `input_topic_link1:=/link1/ruido_imu`
-- `output_topic_link1:=/link1/imu_filtrada`
-- `input_topic_link2:=/link2/ruido_imu`
-- `output_topic_link2:=/link2/imu_filtrada`
-- `process_noise:=0.01`
-- `measurement_noise:=0.05`
+Because the node publishes standard `JointState` messages, you can easily use `rqt_plot` to compare the true simulated angles with our Kalman filtered estimations in real-time.
 
-## 3) Record a rosbag
+Open a new terminal and run:
 
-Open another terminal:
-
+**For Joint 1 (Link 1):**
 ```bash
-source /install/setup.bash
-mkdir -p /bags
-ros2 bag record \
-  -o /bags/kalman_dual_imu \
-  /joint_states \
-  /link1/ruido_imu \
-  /link2/ruido_imu \
-  /link1/imu_filtrada \
-  /link2/imu_filtrada
+ros2 run rqt_plot rqt_plot /joint_states/position[0] /kalman_joint_states/position[0]
 ```
 
-## 4) Generate plots from rosbag
-
-Interactive plots:
-
+**For Joint 2 (Link 2):**
 ```bash
-
-source /install/setup.bash
-ros2 run kalman_filter plot_kalman_rosbag /bags/kalman_dual_imu
+ros2 run rqt_plot rqt_plot /joint_states/position[1] /kalman_joint_states/position[1]
 ```
 
-Save PNG files without opening a GUI window:
-
-```bash
-source /install/setup.bash
-ros2 run kalman_filter plot_kalman_rosbag \
-  /bags/kalman_dual_imu \
-  --save-dir /bags/kalman_dual_imu/plots \
-  --no-show
-```
-
-Expected output files:
-
-- `comparacion_link1.png`
-- `comparacion_link2.png`
-- `joint_states.png`
-
-## Notes
-
-- The plotting script auto-detects rosbag storage (`sqlite3` or `mcap`) from `metadata.yaml`.
-- If needed, force a storage plugin manually:
-
-```bash
-ros2 run kalman_filter plot_kalman_rosbag /bags/kalman_dual_imu --storage-id mcap
-```
+*(Note: Ensure you are publishing commands to the robot so it moves! The plots will overlay the ground truth from Gazebo and your new filtered estimation. Due to the 2-DOF setup, the node automatically computes the Joint 2 angle as `Link2_Abs_Angle - Link1_Abs_Angle`.)*

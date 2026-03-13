@@ -1,164 +1,196 @@
+import math
 import numpy as np
+
 import rclpy
 from rclpy.node import Node
-from sensor_msgs.msg import Imu
+from sensor_msgs.msg import Imu, JointState
 
-
-class AxisKalmanFilter:
-    def __init__(self, process_noise: float, measurement_noise: float):
-        self.process_noise = process_noise
-        self.measurement_noise = measurement_noise
-
-        self.x = np.array([[0.0], [0.0]])
-        self.P = np.eye(2)
+class TiltKalmanFilter:
+    """
+    A simple 1D Kalman Filter that fuses an accelerometer and a gyroscope.
+    It tracks two things (the state):
+    1. The angle (theta)
+    2. The gyroscope bias (the inherent drift of the gyro)
+    """
+    def __init__(self, process_noise_Q_angle: float, process_noise_Q_bias: float, measurement_noise_R: float):
+        # State: [angle, gyro_bias]
+        self.x = np.array([[0.0], 
+                           [0.0]])
+        
+        # P: Covariance matrix (how uncertain we are about the current state)
+        self.P = np.array([[1.0, 0.0],
+                           [0.0, 1.0]])
+        
+        # Q: Process Noise matrix (how much we "distrust" our prediction model)
+        # We trust the angle prediction quite a bit, but we also allow the bias to change slowly
+        self.Q = np.array([[process_noise_Q_angle, 0.0],
+                           [0.0, process_noise_Q_bias]])
+        
+        # R: Measurement Noise matrix (how much we "distrust" the accelerometer reading)
+        self.R = np.array([[measurement_noise_R]])
+        
+        # H: Measurement matrix (maps state to measurement)
+        # We only measure the angle directly from the accelerometer, not the bias
         self.H = np.array([[1.0, 0.0]])
-        self.R = np.array([[measurement_noise]])
 
-    def predict(self, dt: float):
-        dt = max(dt, 1e-4)
-        F = np.array([[1.0, dt], [0.0, 1.0]])
-        G = np.array([[0.5 * dt * dt], [dt]])
-        Q = (G @ G.T) * self.process_noise
+    def predict(self, dt: float, gyro_rate: float):
+        """
+        Step 1: Predict the new angle using the gyroscope.
+        angle_new = angle_old + (gyro_rate - gyro_bias) * dt
+        """
+        # F: State transition matrix
+        # x_new = F * x_old
+        # [angle_new] = [1, -dt] * [angle_old]   + [dt] * gyro_rate
+        # [bias_new ]   [0,   1]   [bias_old ]   [ 0]
+        
+        # 1. Predict State
+        self.x[0, 0] += (gyro_rate - self.x[1, 0]) * dt
+        # self.x[1, 0] remains the same (bias doesn't change predictably)
+        
+        # 2. Predict Covariance (Uncertainty grows over time without measurements)
+        F = np.array([[1.0, -dt],
+                      [0.0,  1.0]])
+        self.P = F @ self.P @ F.T + self.Q
 
-        self.x = F @ self.x
-        self.P = F @ self.P @ F.T + Q
-
-    def update(self, measurement: float) -> float:
-        z = np.array([[measurement]])
+    def update(self, accel_angle: float) -> float:
+        """
+        Step 2: Update the predicted angle with the actual accelerometer reading.
+        """
+        z = np.array([[accel_angle]])
+        
+        # S: Innovation covariance (how much uncertainty there is in this update)
         S = self.H @ self.P @ self.H.T + self.R
+        
+        # K: Kalman Gain (how much should we trust the measurement vs prediction)
         K = self.P @ self.H.T @ np.linalg.inv(S)
+        
+        # Innovation: difference between measured angle and predicted angle
         innovation = z - (self.H @ self.x)
+        
+        # 3. Update State
         self.x = self.x + K @ innovation
-
-        I = np.eye(self.P.shape[0])
+        
+        # 4. Update Covariance (Uncertainty decreases because we have a measurement)
+        I = np.eye(2)
         self.P = (I - K @ self.H) @ self.P
+        
+        # Return the final filtered angle
         return float(self.x[0, 0])
-
-    def variance(self) -> float:
-        return float(self.P[0, 0])
-
 
 class KalmanFilterNode(Node):
     def __init__(self):
         super().__init__('kalman_filter_node')
-        self.get_logger().info('Kalman Filter Node started.')
+        self.get_logger().info('Kalman Filter Node started (Estimating Angles).')
 
+        # Parameters
         self.declare_parameter('input_topic_link1', '/link1/ruido_imu')
-        self.declare_parameter('output_topic_link1', '/link1/imu_filtrada')
         self.declare_parameter('input_topic_link2', '/link2/ruido_imu')
-        self.declare_parameter('output_topic_link2', '/link2/imu_filtrada')
-        self.declare_parameter('process_noise', 0.01)
-        self.declare_parameter('measurement_noise', 0.05)
-
+        self.declare_parameter('output_topic_joints', '/kalman_joint_states')
+        
+        # Kalman filter tuning parameters
+        self.declare_parameter('q_angle', 0.001) # Trust model (gyro)
+        self.declare_parameter('q_bias',  0.003) 
+        self.declare_parameter('r_measure', 0.03) # Distrust accel
+        
         input_topic_link1 = self.get_parameter('input_topic_link1').get_parameter_value().string_value
-        output_topic_link1 = self.get_parameter('output_topic_link1').get_parameter_value().string_value
         input_topic_link2 = self.get_parameter('input_topic_link2').get_parameter_value().string_value
-        output_topic_link2 = self.get_parameter('output_topic_link2').get_parameter_value().string_value
-        process_noise = self.get_parameter('process_noise').get_parameter_value().double_value
-        measurement_noise = self.get_parameter('measurement_noise').get_parameter_value().double_value
+        output_topic_joints = self.get_parameter('output_topic_joints').get_parameter_value().string_value
+        
+        q_angle = self.get_parameter('q_angle').get_parameter_value().double_value
+        q_bias = self.get_parameter('q_bias').get_parameter_value().double_value
+        r_measure = self.get_parameter('r_measure').get_parameter_value().double_value
 
-        self.filters = {
-            'link1': self._create_filter_bank(process_noise, measurement_noise),
-            'link2': self._create_filter_bank(process_noise, measurement_noise),
-        }
+        # Create two separate filters for Link 1 and Link 2 absolute angles
+        self.kf_link1 = TiltKalmanFilter(q_angle, q_bias, r_measure)
+        self.kf_link2 = TiltKalmanFilter(q_angle, q_bias, r_measure)
 
-        self.publisher_link1 = self.create_publisher(Imu, output_topic_link1, 10)
-        self.publisher_link2 = self.create_publisher(Imu, output_topic_link2, 10)
+        # Variables to store the latest angles and time
+        self.theta1_abs = 0.0 # Absolute angle of link 1
+        self.theta2_abs = 0.0 # Absolute angle of link 2
+        self.last_time_link1 = None
+        self.last_time_link2 = None
 
-        self.subscription_link1 = self.create_subscription(
-            Imu,
-            input_topic_link1,
-            lambda msg: self.imu_callback(msg, 'link1'),
-            10,
-        )
-        self.subscription_link2 = self.create_subscription(
-            Imu,
-            input_topic_link2,
-            lambda msg: self.imu_callback(msg, 'link2'),
-            10,
-        )
+        # Publisher for the Joint States
+        self.joint_pub = self.create_publisher(JointState, output_topic_joints, 10)
 
-        self.get_logger().info(f'Subscribed to link1 IMU: {input_topic_link1}')
-        self.get_logger().info(f'Publishing filtered link1 IMU to: {output_topic_link1}')
-        self.get_logger().info(f'Subscribed to link2 IMU: {input_topic_link2}')
-        self.get_logger().info(f'Publishing filtered link2 IMU to: {output_topic_link2}')
+        # Subscribers
+        self.sub_link1 = self.create_subscription(
+            Imu, input_topic_link1, self.imu1_callback, 10)
+        self.sub_link2 = self.create_subscription(
+            Imu, input_topic_link2, self.imu2_callback, 10)
 
-    def _create_filter_bank(self, process_noise: float, measurement_noise: float) -> dict:
-        return {
-            'angular': {
-                'x': AxisKalmanFilter(process_noise, measurement_noise),
-                'y': AxisKalmanFilter(process_noise, measurement_noise),
-                'z': AxisKalmanFilter(process_noise, measurement_noise),
-            },
-            'linear': {
-                'x': AxisKalmanFilter(process_noise, measurement_noise),
-                'y': AxisKalmanFilter(process_noise, measurement_noise),
-                'z': AxisKalmanFilter(process_noise, measurement_noise),
-            },
-            'last_time': None,
-        }
+    def compute_accel_angle(self, msg: Imu) -> float:
+        """
+        Calculates the angle of the sensor strictly based on the accelerometer.
+        Since gravity always points down (-Y axis), we can use basic trigonometry.
+        """
+        ax = msg.linear_acceleration.x
+        ay = msg.linear_acceleration.y
+        
+        # When joint angle is 0, arm is horizontal (along X). Gravity pulls down (-Y).
+        # Accelerometer measures normal force pushing UP (+Y), so ax=0, ay=+9.8.
+        # So we use atan2(ax, ay) to get angle=0 when resting horizontally.
+        return math.atan2(ax, ay)
 
-    def _get_publisher(self, link_key: str):
-        return self.publisher_link1 if link_key == 'link1' else self.publisher_link2
-
-    def _compute_dt(self, msg: Imu, link_key: str) -> float:
-        link_filter = self.filters[link_key]
+    def imu1_callback(self, msg: Imu):
         current_time = float(msg.header.stamp.sec) + float(msg.header.stamp.nanosec) * 1e-9
+        
+        if self.last_time_link1 is None:
+            self.last_time_link1 = current_time
+            return
+            
+        dt = current_time - self.last_time_link1
+        self.last_time_link1 = current_time
+        dt = max(dt, 1e-4)
 
-        if current_time == 0.0:
-            if link_filter['last_time'] is None:
-                link_filter['last_time'] = self.get_clock().now().nanoseconds * 1e-9
-                return 0.01
-            now_time = self.get_clock().now().nanoseconds * 1e-9
-            dt = now_time - link_filter['last_time']
-            link_filter['last_time'] = now_time
-            return max(dt, 1e-4)
+        # 1. Get Accelerometer angle (noisy absolute angle)
+        accel_angle = self.compute_accel_angle(msg)
+        
+        # 2. Get Gyroscope rate (smooth velocity)
+        gyro_rate = msg.angular_velocity.z
 
-        if link_filter['last_time'] is None:
-            link_filter['last_time'] = current_time
-            return 0.01
+        # 3. Kalman Filter Predict & Update
+        self.kf_link1.predict(dt, gyro_rate)
+        self.theta1_abs = self.kf_link1.update(accel_angle)
+        
+        # Publish the joint states using the latest info
+        self.publish_joint_states(msg.header.stamp)
 
-        dt = current_time - link_filter['last_time']
-        link_filter['last_time'] = current_time
-        return max(dt, 1e-4)
+    def imu2_callback(self, msg: Imu):
+        current_time = float(msg.header.stamp.sec) + float(msg.header.stamp.nanosec) * 1e-9
+        
+        if self.last_time_link2 is None:
+            self.last_time_link2 = current_time
+            return
+            
+        dt = current_time - self.last_time_link2
+        self.last_time_link2 = current_time
+        dt = max(dt, 1e-4)
 
-    def imu_callback(self, msg: Imu, link_key: str):
-        dt = self._compute_dt(msg, link_key)
-        link_filter = self.filters[link_key]
-        angular_filters = link_filter['angular']
-        linear_filters = link_filter['linear']
+        # 1. Get Accelerometer angle
+        accel_angle = self.compute_accel_angle(msg)
+        
+        # 2. Get Gyroscope rate
+        gyro_rate = msg.angular_velocity.z
 
-        for axis in ['x', 'y', 'z']:
-            angular_filters[axis].predict(dt)
-            linear_filters[axis].predict(dt)
+        # 3. Kalman Filter Predict & Update
+        self.kf_link2.predict(dt, gyro_rate)
+        self.theta2_abs = self.kf_link2.update(accel_angle)
 
-        filtered_msg = Imu()
-        filtered_msg.header = msg.header
-        filtered_msg.orientation = msg.orientation
-        filtered_msg.orientation_covariance = msg.orientation_covariance
+    def publish_joint_states(self, stamp):
+        # Joint 1 angle is just the absolute angle of link 1
+        joint1_angle = self.theta1_abs
+        
+        # Joint 2 angle is the difference between link 2's absolute angle and link 1's absolute angle
+        joint2_angle = self.theta2_abs - self.theta1_abs
 
-        filtered_msg.angular_velocity.x = angular_filters['x'].update(msg.angular_velocity.x)
-        filtered_msg.angular_velocity.y = angular_filters['y'].update(msg.angular_velocity.y)
-        filtered_msg.angular_velocity.z = angular_filters['z'].update(msg.angular_velocity.z)
-
-        filtered_msg.linear_acceleration.x = linear_filters['x'].update(msg.linear_acceleration.x)
-        filtered_msg.linear_acceleration.y = linear_filters['y'].update(msg.linear_acceleration.y)
-        filtered_msg.linear_acceleration.z = linear_filters['z'].update(msg.linear_acceleration.z)
-
-        filtered_msg.angular_velocity_covariance = [
-            angular_filters['x'].variance(), 0.0, 0.0,
-            0.0, angular_filters['y'].variance(), 0.0,
-            0.0, 0.0, angular_filters['z'].variance(),
-        ]
-
-        filtered_msg.linear_acceleration_covariance = [
-            linear_filters['x'].variance(), 0.0, 0.0,
-            0.0, linear_filters['y'].variance(), 0.0,
-            0.0, 0.0, linear_filters['z'].variance(),
-        ]
-
-        self._get_publisher(link_key).publish(filtered_msg)
-
+        msg = JointState()
+        msg.header.stamp = stamp
+        msg.name = ['joint1', 'joint2']
+        # Provide the computed angles!
+        msg.position = [joint1_angle, joint2_angle]
+        
+        self.joint_pub.publish(msg)
 
 def main(args=None):
     rclpy.init(args=args)
@@ -169,4 +201,3 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
-

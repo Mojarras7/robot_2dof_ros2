@@ -97,3 +97,28 @@ Check what coordinates the robot actually sees itself at:
 ```bash
 ros2 topic echo /joint_states
 ```
+
+---
+
+## 3) Kalman Filter Sensor Fusion
+
+We implemented a Kalman Filter that fuses the gyro and accelerometer data from the IMUs on both links to estimate the true joint angles in real time. 
+
+Start the simulation first (Step 1), then run the Kalman filter node:
+
+```bash
+# In a new terminal: Source workspace and run Kalman Filter
+source install/setup.bash
+ros2 run kalman_filter kalman_filter_node
+```
+
+To easily compare the true simulated angles with our Kalman filtered estimations without relying on external plotting tools, run the custom comparison node in a new terminal:
+
+```bash
+source install/setup.bash
+ros2 run kalman_filter kalman_comparison_node
+```
+
+This will print a clean, side-by-side terminal output every second confirming the raw `joint_states` against the filtered `kalman_joint_states` estimations and their absolute difference.
+
+*(Note: As an alternative if you have a working GUI, you can visualize the topics side-by-side by running `ros2 run rqt_plot rqt_plot` and manually adding `/joint_states/position[0]` and `/kalman_joint_states/position[0]` to the plot)*
