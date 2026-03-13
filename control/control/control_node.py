@@ -90,7 +90,7 @@ class ControlNode(Node):
         self.create_timer(self.dt, self.control_loop)
 
         self.get_logger().info('Ready! Send coordinates via terminal using:')
-        self.get_logger().info,('ros2 topic pub --once /target_coordinate geometry_msgs/msg/Point "{x: 1.0, y: 1.0}"')
+        self.get_logger().info('ros2 topic pub --once /target_coordinate geometry_msgs/msg/Point "{x: 1.0, y: 1.0}"')
 
     # Updates our records of where the robot currently is
     def joint_state_callback(self, msg: JointState) -> None:
