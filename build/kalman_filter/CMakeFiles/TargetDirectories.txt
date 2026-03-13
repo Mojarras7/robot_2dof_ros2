@@ -1,0 +1,10 @@
+/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/kalman_filter/CMakeFiles/uninstall.dir
+/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/kalman_filter/CMakeFiles/kalman_filter_uninstall.dir
+/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/kalman_filter/CMakeFiles/kalman_filter_node.dir
+/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/kalman_filter/CMakeFiles/test.dir
+/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/kalman_filter/CMakeFiles/edit_cache.dir
+/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/kalman_filter/CMakeFiles/rebuild_cache.dir
+/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/kalman_filter/CMakeFiles/list_install_components.dir
+/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/kalman_filter/CMakeFiles/install.dir
+/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/kalman_filter/CMakeFiles/install/local.dir
+/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/kalman_filter/CMakeFiles/install/strip.dir

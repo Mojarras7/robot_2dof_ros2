@@ -1,0 +1,231 @@
+[0.579s] Invoking command in '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/two_dof_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/two_dof_interfaces -DCMAKE_INSTALL_PREFIX=/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces
+[0.690s] -- The C compiler identification is GNU 13.3.0
+[0.818s] -- The CXX compiler identification is GNU 13.3.0
+[0.857s] -- Detecting C compiler ABI info
+[1.006s] -- Detecting C compiler ABI info - done
+[1.036s] -- Check for working C compiler: /usr/lib/ccache/cc - skipped
+[1.037s] -- Detecting C compile features
+[1.038s] -- Detecting C compile features - done
+[1.059s] -- Detecting CXX compiler ABI info
+[1.226s] -- Detecting CXX compiler ABI info - done
+[1.257s] -- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped
+[1.258s] -- Detecting CXX compile features
+[1.260s] -- Detecting CXX compile features - done
+[1.272s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.528s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.734s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[1.751s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.899s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.062s] -- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[3.138s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[3.831s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.822s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.831s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[5.081s] -- Found PythonExtra: /usr/bin/python3  
+[5.799s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[6.051s] -- Configuring done (5.5s)
+[6.118s] -- Generating done (0.0s)
+[6.138s] -- Build files have been written to: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/two_dof_interfaces
+[6.147s] Invoked command in '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/two_dof_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/two_dof_interfaces -DCMAKE_INSTALL_PREFIX=/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces
+[6.149s] Invoking command in '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/two_dof_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/two_dof_interfaces -- -j8 -l8
+[6.234s] [  2%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[6.248s] [  2%] Built target ament_cmake_python_copy_two_dof_interfaces
+[6.553s] [  2%] Built target two_dof_interfaces__rosidl_generator_type_description
+[6.570s] [  5%] [34m[1mGenerating C code for ROS interfaces[0m
+[6.587s] [  8%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[6.693s] running egg_info
+[6.694s] creating two_dof_interfaces.egg-info
+[6.746s] writing two_dof_interfaces.egg-info/PKG-INFO
+[6.746s] writing dependency_links to two_dof_interfaces.egg-info/dependency_links.txt
+[6.747s] writing top-level names to two_dof_interfaces.egg-info/top_level.txt
+[6.747s] writing manifest file 'two_dof_interfaces.egg-info/SOURCES.txt'
+[6.896s] reading manifest file 'two_dof_interfaces.egg-info/SOURCES.txt'
+[6.897s] writing manifest file 'two_dof_interfaces.egg-info/SOURCES.txt'
+[6.941s] [  8%] Built target ament_cmake_python_build_two_dof_interfaces_egg
+[7.066s] [  8%] Built target two_dof_interfaces__cpp
+[7.097s] [ 17%] [32mBuilding C object CMakeFiles/two_dof_interfaces__rosidl_generator_c.dir/rosidl_generator_c/two_dof_interfaces/srv/detail/coordinate_to_joint__description.c.o[0m
+[7.098s] [ 17%] [32mBuilding C object CMakeFiles/two_dof_interfaces__rosidl_generator_c.dir/rosidl_generator_c/two_dof_interfaces/srv/detail/coordinate_to_joint__functions.c.o[0m
+[7.098s] [ 17%] [32mBuilding C object CMakeFiles/two_dof_interfaces__rosidl_generator_c.dir/rosidl_generator_c/two_dof_interfaces/srv/detail/coordinate_to_joint__type_support.c.o[0m
+[7.272s] [ 20%] [32m[1mLinking C shared library libtwo_dof_interfaces__rosidl_generator_c.so[0m
+[7.337s] [ 20%] Built target two_dof_interfaces__rosidl_generator_c
+[7.363s] [ 32%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[7.363s] [ 32%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[7.364s] [ 32%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[7.364s] [ 35%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[7.364s] [ 38%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[7.364s] [ 38%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[8.005s] [ 41%] [32mBuilding CXX object CMakeFiles/two_dof_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/two_dof_interfaces/srv/coordinate_to_joint__type_support.cpp.o[0m
+[8.021s] [ 44%] [32mBuilding CXX object CMakeFiles/two_dof_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/two_dof_interfaces/srv/detail/coordinate_to_joint__type_support_c.cpp.o[0m
+[8.032s] [ 47%] [32mBuilding CXX object CMakeFiles/two_dof_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/two_dof_interfaces/srv/coordinate_to_joint__type_support.cpp.o[0m
+[8.107s] [ 50%] [32mBuilding CXX object CMakeFiles/two_dof_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/two_dof_interfaces/srv/detail/coordinate_to_joint__type_support.cpp.o[0m
+[8.140s] [ 52%] [32mBuilding C object CMakeFiles/two_dof_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/two_dof_interfaces/srv/detail/coordinate_to_joint__type_support.c.o[0m
+[8.231s] [ 55%] [32m[1mLinking CXX shared library libtwo_dof_interfaces__rosidl_typesupport_c.so[0m
+[8.234s] [ 58%] [32mBuilding CXX object CMakeFiles/two_dof_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/two_dof_interfaces/srv/detail/dds_fastrtps/coordinate_to_joint__type_support.cpp.o[0m
+[8.337s] [ 61%] [32m[1mLinking C shared library libtwo_dof_interfaces__rosidl_typesupport_introspection_c.so[0m
+[8.337s] [ 61%] Built target two_dof_interfaces__rosidl_typesupport_c
+[8.417s] [ 61%] Built target two_dof_interfaces__rosidl_typesupport_introspection_c
+[9.226s] [ 64%] [32m[1mLinking CXX shared library libtwo_dof_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[9.266s] [ 67%] [32m[1mLinking CXX shared library libtwo_dof_interfaces__rosidl_typesupport_cpp.so[0m
+[9.377s] [ 70%] [32m[1mLinking CXX shared library libtwo_dof_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[9.411s] [ 70%] Built target two_dof_interfaces__rosidl_typesupport_fastrtps_c
+[9.449s] [ 70%] Built target two_dof_interfaces__rosidl_typesupport_cpp
+[9.519s] [ 70%] Built target two_dof_interfaces__rosidl_typesupport_introspection_cpp
+[9.577s] [ 73%] [32m[1mLinking CXX shared library libtwo_dof_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[9.704s] [ 73%] Built target two_dof_interfaces__rosidl_typesupport_fastrtps_cpp
+[9.738s] [ 73%] Built target two_dof_interfaces
+[9.772s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[10.476s] [ 76%] Built target two_dof_interfaces__py
+[10.511s] [ 79%] [32mBuilding C object CMakeFiles/two_dof_interfaces__rosidl_generator_py.dir/rosidl_generator_py/two_dof_interfaces/srv/_coordinate_to_joint_s.c.o[0m
+[10.923s] [ 82%] [32m[1mLinking C shared library libtwo_dof_interfaces__rosidl_generator_py.so[0m
+[11.005s] [ 82%] Built target two_dof_interfaces__rosidl_generator_py
+[11.053s] [ 85%] [32mBuilding C object CMakeFiles/two_dof_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/two_dof_interfaces/_two_dof_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[11.054s] [ 88%] [32mBuilding C object CMakeFiles/two_dof_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/two_dof_interfaces/_two_dof_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[11.055s] [ 91%] [32mBuilding C object CMakeFiles/two_dof_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/two_dof_interfaces/_two_dof_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[11.396s] [ 94%] [32m[1mLinking C shared module rosidl_generator_py/two_dof_interfaces/two_dof_interfaces_s__rosidl_typesupport_introspection_c.so[0m
+[11.400s] [ 97%] [32m[1mLinking C shared module rosidl_generator_py/two_dof_interfaces/two_dof_interfaces_s__rosidl_typesupport_c.so[0m
+[11.419s] [100%] [32m[1mLinking C shared module rosidl_generator_py/two_dof_interfaces/two_dof_interfaces_s__rosidl_typesupport_fastrtps_c.so[0m
+[11.453s] [100%] Built target two_dof_interfaces_s__rosidl_typesupport_introspection_c
+[11.457s] [100%] Built target two_dof_interfaces_s__rosidl_typesupport_c
+[11.477s] [100%] Built target two_dof_interfaces_s__rosidl_typesupport_fastrtps_c
+[11.495s] Invoked command in '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/two_dof_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/two_dof_interfaces -- -j8 -l8
+[11.497s] Invoking command in '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/two_dof_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/two_dof_interfaces
+[11.512s] -- Install configuration: ""
+[11.512s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/ament_index/resource_index/rosidl_interfaces/two_dof_interfaces
+[11.512s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/srv/CoordinateToJoint.json
+[11.513s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces
+[11.513s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/msg
+[11.513s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/msg/rosidl_generator_c__visibility_control.h
+[11.513s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/srv
+[11.513s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/srv/coordinate_to_joint.h
+[11.514s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/srv/detail
+[11.514s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/srv/detail/coordinate_to_joint__description.c
+[11.514s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/srv/detail/coordinate_to_joint__functions.c
+[11.514s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/srv/detail/coordinate_to_joint__functions.h
+[11.514s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/srv/detail/coordinate_to_joint__struct.h
+[11.515s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/srv/detail/coordinate_to_joint__type_support.c
+[11.515s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/srv/detail/coordinate_to_joint__type_support.h
+[11.515s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/environment/library_path.sh
+[11.515s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/environment/library_path.dsv
+[11.515s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/libtwo_dof_interfaces__rosidl_generator_c.so
+[11.516s] -- Set non-toolchain portion of runtime path of "/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/libtwo_dof_interfaces__rosidl_generator_c.so" to ""
+[11.516s] -- Up-to-date: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces
+[11.516s] -- Up-to-date: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/msg
+[11.516s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[11.516s] -- Up-to-date: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/srv
+[11.517s] -- Up-to-date: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/srv/detail
+[11.517s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/srv/detail/coordinate_to_joint__rosidl_typesupport_fastrtps_c.h
+[11.517s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/libtwo_dof_interfaces__rosidl_typesupport_fastrtps_c.so
+[11.517s] -- Set non-toolchain portion of runtime path of "/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/libtwo_dof_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[11.517s] -- Up-to-date: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces
+[11.518s] -- Up-to-date: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/msg
+[11.518s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[11.518s] -- Up-to-date: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/srv
+[11.518s] -- Up-to-date: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/srv/detail
+[11.518s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/srv/detail/coordinate_to_joint__rosidl_typesupport_introspection_c.h
+[11.519s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/srv/detail/coordinate_to_joint__type_support.c
+[11.519s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/libtwo_dof_interfaces__rosidl_typesupport_introspection_c.so
+[11.519s] -- Set non-toolchain portion of runtime path of "/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/libtwo_dof_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[11.519s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/libtwo_dof_interfaces__rosidl_typesupport_c.so
+[11.520s] -- Set non-toolchain portion of runtime path of "/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/libtwo_dof_interfaces__rosidl_typesupport_c.so" to ""
+[11.520s] -- Up-to-date: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces
+[11.520s] -- Up-to-date: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/msg
+[11.521s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[11.521s] -- Up-to-date: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/srv
+[11.521s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/srv/coordinate_to_joint.hpp
+[11.521s] -- Up-to-date: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/srv/detail
+[11.522s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/srv/detail/coordinate_to_joint__builder.hpp
+[11.522s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/srv/detail/coordinate_to_joint__struct.hpp
+[11.522s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/srv/detail/coordinate_to_joint__traits.hpp
+[11.522s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/srv/detail/coordinate_to_joint__type_support.hpp
+[11.522s] -- Up-to-date: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces
+[11.523s] -- Up-to-date: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/msg
+[11.523s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[11.523s] -- Up-to-date: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/srv
+[11.523s] -- Up-to-date: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/srv/detail
+[11.523s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/srv/detail/coordinate_to_joint__rosidl_typesupport_fastrtps_cpp.hpp
+[11.524s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/srv/detail/dds_fastrtps
+[11.524s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/libtwo_dof_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[11.524s] -- Set non-toolchain portion of runtime path of "/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/libtwo_dof_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[11.524s] -- Up-to-date: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces
+[11.525s] -- Up-to-date: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/srv
+[11.525s] -- Up-to-date: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/srv/detail
+[11.525s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/srv/detail/coordinate_to_joint__rosidl_typesupport_introspection_cpp.hpp
+[11.525s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/include/two_dof_interfaces/two_dof_interfaces/srv/detail/coordinate_to_joint__type_support.cpp
+[11.525s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/libtwo_dof_interfaces__rosidl_typesupport_introspection_cpp.so
+[11.526s] -- Set non-toolchain portion of runtime path of "/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/libtwo_dof_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[11.526s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/libtwo_dof_interfaces__rosidl_typesupport_cpp.so
+[11.527s] -- Set non-toolchain portion of runtime path of "/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/libtwo_dof_interfaces__rosidl_typesupport_cpp.so" to ""
+[11.527s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/environment/pythonpath.sh
+[11.527s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/environment/pythonpath.dsv
+[11.528s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/python3.12/site-packages/two_dof_interfaces-0.0.0-py3.12.egg-info
+[11.528s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/python3.12/site-packages/two_dof_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt
+[11.528s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/python3.12/site-packages/two_dof_interfaces-0.0.0-py3.12.egg-info/PKG-INFO
+[11.528s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/python3.12/site-packages/two_dof_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt
+[11.529s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/python3.12/site-packages/two_dof_interfaces-0.0.0-py3.12.egg-info/top_level.txt
+[11.529s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/python3.12/site-packages/two_dof_interfaces
+[11.529s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/python3.12/site-packages/two_dof_interfaces/srv
+[11.529s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/python3.12/site-packages/two_dof_interfaces/srv/_coordinate_to_joint.py
+[11.529s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/python3.12/site-packages/two_dof_interfaces/srv/_coordinate_to_joint_s.c
+[11.530s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/python3.12/site-packages/two_dof_interfaces/srv/__init__.py
+[11.530s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/python3.12/site-packages/two_dof_interfaces/two_dof_interfaces_s__rosidl_typesupport_c.so
+[11.530s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/python3.12/site-packages/two_dof_interfaces/two_dof_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[11.530s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/python3.12/site-packages/two_dof_interfaces/two_dof_interfaces_s__rosidl_typesupport_introspection_c.so
+[11.530s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/python3.12/site-packages/two_dof_interfaces/_two_dof_interfaces_s.ep.rosidl_typesupport_c.c
+[11.531s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/python3.12/site-packages/two_dof_interfaces/_two_dof_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[11.531s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/python3.12/site-packages/two_dof_interfaces/_two_dof_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[11.531s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/python3.12/site-packages/two_dof_interfaces/__init__.py
+[11.593s] Listing '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/python3.12/site-packages/two_dof_interfaces'...
+[11.593s] Compiling '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/python3.12/site-packages/two_dof_interfaces/__init__.py'...
+[11.593s] Listing '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/python3.12/site-packages/two_dof_interfaces/srv'...
+[11.593s] Compiling '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/python3.12/site-packages/two_dof_interfaces/srv/__init__.py'...
+[11.593s] Compiling '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/python3.12/site-packages/two_dof_interfaces/srv/_coordinate_to_joint.py'...
+[11.602s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/python3.12/site-packages/two_dof_interfaces/two_dof_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[11.603s] -- Set non-toolchain portion of runtime path of "/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/python3.12/site-packages/two_dof_interfaces/two_dof_interfaces_s__rosidl_typesupport_fastrtps_c.so" to ""
+[11.603s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/python3.12/site-packages/two_dof_interfaces/two_dof_interfaces_s__rosidl_typesupport_introspection_c.so
+[11.604s] -- Set non-toolchain portion of runtime path of "/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/python3.12/site-packages/two_dof_interfaces/two_dof_interfaces_s__rosidl_typesupport_introspection_c.so" to ""
+[11.604s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/python3.12/site-packages/two_dof_interfaces/two_dof_interfaces_s__rosidl_typesupport_c.so
+[11.605s] -- Set non-toolchain portion of runtime path of "/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/python3.12/site-packages/two_dof_interfaces/two_dof_interfaces_s__rosidl_typesupport_c.so" to ""
+[11.605s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/libtwo_dof_interfaces__rosidl_generator_py.so
+[11.606s] -- Set non-toolchain portion of runtime path of "/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/libtwo_dof_interfaces__rosidl_generator_py.so" to ""
+[11.606s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/srv/CoordinateToJoint.idl
+[11.606s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/srv/CoordinateToJoint.srv
+[11.606s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/ament_index/resource_index/package_run_dependencies/two_dof_interfaces
+[11.607s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/ament_index/resource_index/parent_prefix_path/two_dof_interfaces
+[11.607s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/environment/ament_prefix_path.sh
+[11.607s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/environment/ament_prefix_path.dsv
+[11.607s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/environment/path.sh
+[11.608s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/environment/path.dsv
+[11.608s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/local_setup.bash
+[11.608s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/local_setup.sh
+[11.608s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/local_setup.zsh
+[11.609s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/local_setup.dsv
+[11.609s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/package.dsv
+[11.609s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/ament_index/resource_index/packages/two_dof_interfaces
+[11.610s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/cmake/export_two_dof_interfaces__rosidl_generator_cExport.cmake
+[11.610s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/cmake/export_two_dof_interfaces__rosidl_generator_cExport-noconfig.cmake
+[11.610s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/cmake/export_two_dof_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[11.610s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/cmake/export_two_dof_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[11.611s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/cmake/two_dof_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[11.611s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/cmake/two_dof_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[11.611s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/cmake/two_dof_interfaces__rosidl_typesupport_cExport.cmake
+[11.611s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/cmake/two_dof_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[11.612s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/cmake/export_two_dof_interfaces__rosidl_generator_cppExport.cmake
+[11.612s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/cmake/export_two_dof_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[11.612s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/cmake/export_two_dof_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[11.612s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/cmake/two_dof_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[11.613s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/cmake/two_dof_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[11.613s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/cmake/two_dof_interfaces__rosidl_typesupport_cppExport.cmake
+[11.613s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/cmake/two_dof_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[11.614s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/cmake/export_two_dof_interfaces__rosidl_generator_pyExport.cmake
+[11.614s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/cmake/export_two_dof_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[11.614s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/cmake/rosidl_cmake-extras.cmake
+[11.614s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[11.615s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[11.615s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[11.615s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[11.615s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[11.616s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[11.616s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/cmake/two_dof_interfacesConfig.cmake
+[11.616s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/cmake/two_dof_interfacesConfig-version.cmake
+[11.616s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/package.xml
+[11.620s] Invoked command in '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/two_dof_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/two_dof_interfaces

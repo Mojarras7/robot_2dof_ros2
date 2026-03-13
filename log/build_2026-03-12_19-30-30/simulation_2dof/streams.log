@@ -1,0 +1,26 @@
+[0.488s] Invoking command in '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/simulation_2dof': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/simulation_2dof -- -j8 -l8
+[0.557s] Invoked command in '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/simulation_2dof' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/simulation_2dof -- -j8 -l8
+[0.576s] Invoking command in '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/simulation_2dof': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/simulation_2dof
+[0.596s] -- Install configuration: ""
+[0.596s] -- Up-to-date: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/share/simulation_2dof/urdf
+[0.597s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/share/simulation_2dof/urdf/robot_2dof.urdf
+[0.597s] -- Up-to-date: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/share/simulation_2dof/launch
+[0.597s] -- Up-to-date: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/share/simulation_2dof/launch/simulation_2dof.launch.py
+[0.597s] -- Up-to-date: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/share/simulation_2dof/config
+[0.598s] -- Up-to-date: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/share/simulation_2dof/config/controllers.yaml
+[0.598s] -- Up-to-date: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/share/ament_index/resource_index/package_run_dependencies/simulation_2dof
+[0.598s] -- Up-to-date: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/share/ament_index/resource_index/parent_prefix_path/simulation_2dof
+[0.599s] -- Up-to-date: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/share/simulation_2dof/environment/ament_prefix_path.sh
+[0.599s] -- Up-to-date: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/share/simulation_2dof/environment/ament_prefix_path.dsv
+[0.599s] -- Up-to-date: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/share/simulation_2dof/environment/path.sh
+[0.599s] -- Up-to-date: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/share/simulation_2dof/environment/path.dsv
+[0.600s] -- Up-to-date: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/share/simulation_2dof/local_setup.bash
+[0.600s] -- Up-to-date: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/share/simulation_2dof/local_setup.sh
+[0.600s] -- Up-to-date: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/share/simulation_2dof/local_setup.zsh
+[0.600s] -- Up-to-date: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/share/simulation_2dof/local_setup.dsv
+[0.601s] -- Installing: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/share/simulation_2dof/package.dsv
+[0.601s] -- Up-to-date: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/share/ament_index/resource_index/packages/simulation_2dof
+[0.601s] -- Up-to-date: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/share/simulation_2dof/cmake/simulation_2dofConfig.cmake
+[0.601s] -- Up-to-date: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/share/simulation_2dof/cmake/simulation_2dofConfig-version.cmake
+[0.602s] -- Up-to-date: /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/share/simulation_2dof/package.xml
+[0.621s] Invoked command in '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/simulation_2dof' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/simulation_2dof

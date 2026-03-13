@@ -1,0 +1,319 @@
+[0.261s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.261s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7bd11b97cda0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7bd11b97cc50>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7bd11b97cc50>>)
+[0.324s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.324s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.324s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.325s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.325s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.325s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.325s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(control) by extensions ['ignore', 'ignore_ament_install']
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(control) by extension 'ignore'
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(control) by extension 'ignore_ament_install'
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(control) by extensions ['colcon_pkg']
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(control) by extension 'colcon_pkg'
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(control) by extensions ['colcon_meta']
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(control) by extension 'colcon_meta'
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(control) by extensions ['ros']
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(control) by extension 'ros'
+[0.367s] DEBUG:colcon.colcon_core.package_identification:Package 'control' with type 'ros.ament_python' and name 'control'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(kalman_filter) by extensions ['ignore', 'ignore_ament_install']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(kalman_filter) by extension 'ignore'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(kalman_filter) by extension 'ignore_ament_install'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(kalman_filter) by extensions ['colcon_pkg']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(kalman_filter) by extension 'colcon_pkg'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(kalman_filter) by extensions ['colcon_meta']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(kalman_filter) by extension 'colcon_meta'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(kalman_filter) by extensions ['ros']
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(kalman_filter) by extension 'ros'
+[0.369s] DEBUG:colcon.colcon_core.package_identification:Package 'kalman_filter' with type 'ros.ament_cmake' and name 'kalman_filter'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(simulation_2dof) by extensions ['ignore', 'ignore_ament_install']
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(simulation_2dof) by extension 'ignore'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(simulation_2dof) by extension 'ignore_ament_install'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(simulation_2dof) by extensions ['colcon_pkg']
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(simulation_2dof) by extension 'colcon_pkg'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(simulation_2dof) by extensions ['colcon_meta']
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(simulation_2dof) by extension 'colcon_meta'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(simulation_2dof) by extensions ['ros']
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(simulation_2dof) by extension 'ros'
+[0.372s] DEBUG:colcon.colcon_core.package_identification:Package 'simulation_2dof' with type 'ros.ament_cmake' and name 'simulation_2dof'
+[0.372s] Level 1:colcon.colcon_core.package_identification:_identify(two_dof_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.372s] Level 1:colcon.colcon_core.package_identification:_identify(two_dof_interfaces) by extension 'ignore'
+[0.372s] Level 1:colcon.colcon_core.package_identification:_identify(two_dof_interfaces) by extension 'ignore_ament_install'
+[0.372s] Level 1:colcon.colcon_core.package_identification:_identify(two_dof_interfaces) by extensions ['colcon_pkg']
+[0.372s] Level 1:colcon.colcon_core.package_identification:_identify(two_dof_interfaces) by extension 'colcon_pkg'
+[0.372s] Level 1:colcon.colcon_core.package_identification:_identify(two_dof_interfaces) by extensions ['colcon_meta']
+[0.372s] Level 1:colcon.colcon_core.package_identification:_identify(two_dof_interfaces) by extension 'colcon_meta'
+[0.372s] Level 1:colcon.colcon_core.package_identification:_identify(two_dof_interfaces) by extensions ['ros']
+[0.372s] Level 1:colcon.colcon_core.package_identification:_identify(two_dof_interfaces) by extension 'ros'
+[0.374s] DEBUG:colcon.colcon_core.package_identification:Package 'two_dof_interfaces' with type 'ros.ament_cmake' and name 'two_dof_interfaces'
+[0.374s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.374s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.374s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.374s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.374s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.402s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.402s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.405s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install
+[0.408s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 407 installed packages in /opt/ros/jazzy
+[0.410s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.507s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_args' from command line to 'None'
+[0.507s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_target' from command line to 'None'
+[0.507s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.507s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.507s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_clean_first' from command line to 'False'
+[0.507s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_force_configure' from command line to 'False'
+[0.507s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'ament_cmake_args' from command line to 'None'
+[0.507s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.507s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.507s] DEBUG:colcon.colcon_core.verb:Building package 'control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/control', 'merge_install': False, 'path': '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/control', 'symlink_install': False, 'test_result_base': None}
+[0.508s] Level 5:colcon.colcon_core.verb:set package 'kalman_filter' build argument 'cmake_args' from command line to 'None'
+[0.508s] Level 5:colcon.colcon_core.verb:set package 'kalman_filter' build argument 'cmake_target' from command line to 'None'
+[0.508s] Level 5:colcon.colcon_core.verb:set package 'kalman_filter' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.508s] Level 5:colcon.colcon_core.verb:set package 'kalman_filter' build argument 'cmake_clean_cache' from command line to 'False'
+[0.508s] Level 5:colcon.colcon_core.verb:set package 'kalman_filter' build argument 'cmake_clean_first' from command line to 'False'
+[0.508s] Level 5:colcon.colcon_core.verb:set package 'kalman_filter' build argument 'cmake_force_configure' from command line to 'False'
+[0.508s] Level 5:colcon.colcon_core.verb:set package 'kalman_filter' build argument 'ament_cmake_args' from command line to 'None'
+[0.508s] Level 5:colcon.colcon_core.verb:set package 'kalman_filter' build argument 'catkin_cmake_args' from command line to 'None'
+[0.508s] Level 5:colcon.colcon_core.verb:set package 'kalman_filter' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.508s] DEBUG:colcon.colcon_core.verb:Building package 'kalman_filter' with the following arguments: {'ament_cmake_args': None, 'build_base': '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/kalman_filter', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/kalman_filter', 'merge_install': False, 'path': '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/kalman_filter', 'symlink_install': False, 'test_result_base': None}
+[0.508s] Level 5:colcon.colcon_core.verb:set package 'simulation_2dof' build argument 'cmake_args' from command line to 'None'
+[0.508s] Level 5:colcon.colcon_core.verb:set package 'simulation_2dof' build argument 'cmake_target' from command line to 'None'
+[0.508s] Level 5:colcon.colcon_core.verb:set package 'simulation_2dof' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.508s] Level 5:colcon.colcon_core.verb:set package 'simulation_2dof' build argument 'cmake_clean_cache' from command line to 'False'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'simulation_2dof' build argument 'cmake_clean_first' from command line to 'False'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'simulation_2dof' build argument 'cmake_force_configure' from command line to 'False'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'simulation_2dof' build argument 'ament_cmake_args' from command line to 'None'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'simulation_2dof' build argument 'catkin_cmake_args' from command line to 'None'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'simulation_2dof' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.509s] DEBUG:colcon.colcon_core.verb:Building package 'simulation_2dof' with the following arguments: {'ament_cmake_args': None, 'build_base': '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/simulation_2dof', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof', 'merge_install': False, 'path': '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/simulation_2dof', 'symlink_install': False, 'test_result_base': None}
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'two_dof_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'two_dof_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'two_dof_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'two_dof_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'two_dof_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'two_dof_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'two_dof_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'two_dof_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'two_dof_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.509s] DEBUG:colcon.colcon_core.verb:Building package 'two_dof_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/two_dof_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces', 'merge_install': False, 'path': '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/two_dof_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.510s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.511s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.511s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/control' with build type 'ament_python'
+[0.511s] Level 1:colcon.colcon_core.shell:create_environment_hook('control', 'ament_prefix_path')
+[0.516s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.516s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/control/share/control/hook/ament_prefix_path.ps1'
+[0.517s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/control/share/control/hook/ament_prefix_path.dsv'
+[0.518s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/control/share/control/hook/ament_prefix_path.sh'
+[0.519s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.519s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.524s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/kalman_filter' with build type 'ament_cmake'
+[0.525s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/kalman_filter'
+[0.525s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.525s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.530s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/simulation_2dof' with build type 'ament_cmake'
+[0.531s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/simulation_2dof'
+[0.531s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.531s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.537s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/two_dof_interfaces' with build type 'ament_cmake'
+[0.537s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/two_dof_interfaces'
+[0.538s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.538s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.963s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/control'
+[0.963s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.963s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.976s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/kalman_filter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/kalman_filter -- -j8 -l8
+[0.981s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/simulation_2dof': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/simulation_2dof -- -j8 -l8
+[0.991s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/two_dof_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/two_dof_interfaces -- -j8 -l8
+[1.049s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/simulation_2dof' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/simulation_2dof -- -j8 -l8
+[1.066s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/simulation_2dof': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/simulation_2dof
+[1.093s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(simulation_2dof)
+[1.094s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/simulation_2dof' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/simulation_2dof
+[1.105s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof' for CMake module files
+[1.107s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof' for CMake config files
+[1.108s] Level 1:colcon.colcon_core.shell:create_environment_hook('simulation_2dof', 'cmake_prefix_path')
+[1.108s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/share/simulation_2dof/hook/cmake_prefix_path.ps1'
+[1.109s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/share/simulation_2dof/hook/cmake_prefix_path.dsv'
+[1.110s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/share/simulation_2dof/hook/cmake_prefix_path.sh'
+[1.111s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/bin'
+[1.111s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/lib/pkgconfig/simulation_2dof.pc'
+[1.112s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/lib/python3.12/site-packages'
+[1.113s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/bin'
+[1.114s] INFO:colcon.colcon_core.shell:Creating package script '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/share/simulation_2dof/package.ps1'
+[1.115s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/share/simulation_2dof/package.dsv'
+[1.116s] INFO:colcon.colcon_core.shell:Creating package script '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/share/simulation_2dof/package.sh'
+[1.118s] INFO:colcon.colcon_core.shell:Creating package script '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/share/simulation_2dof/package.bash'
+[1.119s] INFO:colcon.colcon_core.shell:Creating package script '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/share/simulation_2dof/package.zsh'
+[1.121s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/share/colcon-core/packages/simulation_2dof)
+[1.122s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(simulation_2dof)
+[1.122s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof' for CMake module files
+[1.124s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof' for CMake config files
+[1.124s] Level 1:colcon.colcon_core.shell:create_environment_hook('simulation_2dof', 'cmake_prefix_path')
+[1.125s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/share/simulation_2dof/hook/cmake_prefix_path.ps1'
+[1.126s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/share/simulation_2dof/hook/cmake_prefix_path.dsv'
+[1.126s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/share/simulation_2dof/hook/cmake_prefix_path.sh'
+[1.127s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/bin'
+[1.128s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/lib/pkgconfig/simulation_2dof.pc'
+[1.128s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/lib/python3.12/site-packages'
+[1.129s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/bin'
+[1.130s] INFO:colcon.colcon_core.shell:Creating package script '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/share/simulation_2dof/package.ps1'
+[1.131s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/share/simulation_2dof/package.dsv'
+[1.132s] INFO:colcon.colcon_core.shell:Creating package script '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/share/simulation_2dof/package.sh'
+[1.133s] INFO:colcon.colcon_core.shell:Creating package script '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/share/simulation_2dof/package.bash'
+[1.134s] INFO:colcon.colcon_core.shell:Creating package script '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/share/simulation_2dof/package.zsh'
+[1.135s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/simulation_2dof/share/colcon-core/packages/simulation_2dof)
+[1.141s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/kalman_filter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/kalman_filter -- -j8 -l8
+[1.142s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/kalman_filter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/kalman_filter
+[1.178s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kalman_filter)
+[1.178s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/kalman_filter' for CMake module files
+[1.180s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/kalman_filter' for CMake config files
+[1.180s] Level 1:colcon.colcon_core.shell:create_environment_hook('kalman_filter', 'cmake_prefix_path')
+[1.181s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/kalman_filter/share/kalman_filter/hook/cmake_prefix_path.ps1'
+[1.182s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/kalman_filter/share/kalman_filter/hook/cmake_prefix_path.dsv'
+[1.183s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/kalman_filter/share/kalman_filter/hook/cmake_prefix_path.sh'
+[1.184s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/kalman_filter/lib'
+[1.184s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/kalman_filter/bin'
+[1.184s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/kalman_filter/lib/pkgconfig/kalman_filter.pc'
+[1.181s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/kalman_filter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/kalman_filter
+[1.185s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/kalman_filter/lib/python3.12/site-packages'
+[1.186s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/kalman_filter/bin'
+[1.186s] INFO:colcon.colcon_core.shell:Creating package script '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/kalman_filter/share/kalman_filter/package.ps1'
+[1.187s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/kalman_filter/share/kalman_filter/package.dsv'
+[1.188s] INFO:colcon.colcon_core.shell:Creating package script '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/kalman_filter/share/kalman_filter/package.sh'
+[1.189s] INFO:colcon.colcon_core.shell:Creating package script '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/kalman_filter/share/kalman_filter/package.bash'
+[1.189s] INFO:colcon.colcon_core.shell:Creating package script '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/kalman_filter/share/kalman_filter/package.zsh'
+[1.190s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/kalman_filter/share/colcon-core/packages/kalman_filter)
+[1.191s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kalman_filter)
+[1.191s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/kalman_filter' for CMake module files
+[1.193s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/kalman_filter' for CMake config files
+[1.193s] Level 1:colcon.colcon_core.shell:create_environment_hook('kalman_filter', 'cmake_prefix_path')
+[1.193s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/kalman_filter/share/kalman_filter/hook/cmake_prefix_path.ps1'
+[1.195s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/kalman_filter/share/kalman_filter/hook/cmake_prefix_path.dsv'
+[1.196s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/kalman_filter/share/kalman_filter/hook/cmake_prefix_path.sh'
+[1.197s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/kalman_filter/lib'
+[1.197s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/kalman_filter/bin'
+[1.201s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/kalman_filter/lib/pkgconfig/kalman_filter.pc'
+[1.202s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/kalman_filter/lib/python3.12/site-packages'
+[1.203s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/kalman_filter/bin'
+[1.203s] INFO:colcon.colcon_core.shell:Creating package script '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/kalman_filter/share/kalman_filter/package.ps1'
+[1.205s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/kalman_filter/share/kalman_filter/package.dsv'
+[1.206s] INFO:colcon.colcon_core.shell:Creating package script '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/kalman_filter/share/kalman_filter/package.sh'
+[1.207s] INFO:colcon.colcon_core.shell:Creating package script '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/kalman_filter/share/kalman_filter/package.bash'
+[1.212s] INFO:colcon.colcon_core.shell:Creating package script '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/kalman_filter/share/kalman_filter/package.zsh'
+[1.212s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/kalman_filter/share/colcon-core/packages/kalman_filter)
+[1.896s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/two_dof_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/two_dof_interfaces -- -j8 -l8
+[1.897s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/two_dof_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/two_dof_interfaces
+[1.990s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(two_dof_interfaces)
+[1.991s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces' for CMake module files
+[1.993s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces' for CMake config files
+[1.994s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/two_dof_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/two_dof_interfaces
+[1.995s] Level 1:colcon.colcon_core.shell:create_environment_hook('two_dof_interfaces', 'cmake_prefix_path')
+[1.995s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/hook/cmake_prefix_path.ps1'
+[1.996s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/hook/cmake_prefix_path.dsv'
+[1.996s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/hook/cmake_prefix_path.sh'
+[1.997s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib'
+[1.997s] Level 1:colcon.colcon_core.shell:create_environment_hook('two_dof_interfaces', 'ld_library_path_lib')
+[1.997s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/hook/ld_library_path_lib.ps1'
+[1.998s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/hook/ld_library_path_lib.dsv'
+[1.998s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/hook/ld_library_path_lib.sh'
+[1.998s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/bin'
+[1.999s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/pkgconfig/two_dof_interfaces.pc'
+[1.999s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/python3.12/site-packages'
+[1.999s] Level 1:colcon.colcon_core.shell:create_environment_hook('two_dof_interfaces', 'pythonpath')
+[1.999s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/hook/pythonpath.ps1'
+[2.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/hook/pythonpath.dsv'
+[2.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/hook/pythonpath.sh'
+[2.001s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/bin'
+[2.001s] INFO:colcon.colcon_core.shell:Creating package script '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/package.ps1'
+[2.002s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/package.dsv'
+[2.003s] INFO:colcon.colcon_core.shell:Creating package script '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/package.sh'
+[2.003s] INFO:colcon.colcon_core.shell:Creating package script '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/package.bash'
+[2.004s] INFO:colcon.colcon_core.shell:Creating package script '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/package.zsh'
+[2.004s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/colcon-core/packages/two_dof_interfaces)
+[2.005s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(two_dof_interfaces)
+[2.005s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces' for CMake module files
+[2.006s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces' for CMake config files
+[2.007s] Level 1:colcon.colcon_core.shell:create_environment_hook('two_dof_interfaces', 'cmake_prefix_path')
+[2.007s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/hook/cmake_prefix_path.ps1'
+[2.007s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/hook/cmake_prefix_path.dsv'
+[2.008s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/hook/cmake_prefix_path.sh'
+[2.008s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib'
+[2.009s] Level 1:colcon.colcon_core.shell:create_environment_hook('two_dof_interfaces', 'ld_library_path_lib')
+[2.009s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/hook/ld_library_path_lib.ps1'
+[2.009s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/hook/ld_library_path_lib.dsv'
+[2.010s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/hook/ld_library_path_lib.sh'
+[2.010s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/bin'
+[2.010s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/pkgconfig/two_dof_interfaces.pc'
+[2.011s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/lib/python3.12/site-packages'
+[2.011s] Level 1:colcon.colcon_core.shell:create_environment_hook('two_dof_interfaces', 'pythonpath')
+[2.011s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/hook/pythonpath.ps1'
+[2.011s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/hook/pythonpath.dsv'
+[2.012s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/hook/pythonpath.sh'
+[2.013s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/bin'
+[2.013s] INFO:colcon.colcon_core.shell:Creating package script '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/package.ps1'
+[2.014s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/package.dsv'
+[2.014s] INFO:colcon.colcon_core.shell:Creating package script '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/package.sh'
+[2.015s] INFO:colcon.colcon_core.shell:Creating package script '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/package.bash'
+[2.016s] INFO:colcon.colcon_core.shell:Creating package script '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/two_dof_interfaces/package.zsh'
+[2.016s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/two_dof_interfaces/share/colcon-core/packages/two_dof_interfaces)
+[2.294s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/control': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/control build --build-base /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/control/build install --record /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/control/install.log --single-version-externally-managed install_data
+[3.437s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/control' for CMake module files
+[3.437s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/control' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/control build --build-base /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/control/build install --record /media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/build/control/install.log --single-version-externally-managed install_data
+[3.438s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/control' for CMake config files
+[3.439s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/control/lib'
+[3.439s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/control/bin'
+[3.439s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/control/lib/pkgconfig/control.pc'
+[3.440s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/control/lib/python3.12/site-packages'
+[3.440s] Level 1:colcon.colcon_core.shell:create_environment_hook('control', 'pythonpath')
+[3.440s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/control/share/control/hook/pythonpath.ps1'
+[3.441s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/control/share/control/hook/pythonpath.dsv'
+[3.441s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/control/share/control/hook/pythonpath.sh'
+[3.442s] Level 1:colcon.colcon_core.environment:checking '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/control/bin'
+[3.442s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(control)
+[3.442s] INFO:colcon.colcon_core.shell:Creating package script '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/control/share/control/package.ps1'
+[3.443s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/control/share/control/package.dsv'
+[3.444s] INFO:colcon.colcon_core.shell:Creating package script '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/control/share/control/package.sh'
+[3.444s] INFO:colcon.colcon_core.shell:Creating package script '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/control/share/control/package.bash'
+[3.445s] INFO:colcon.colcon_core.shell:Creating package script '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/control/share/control/package.zsh'
+[3.445s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/control/share/colcon-core/packages/control)
+[3.445s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.446s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.446s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.446s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.460s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.460s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.460s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.474s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.474s] INFO:colcon.colcon_core.shell:Creating prefix script '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/local_setup.ps1'
+[3.475s] INFO:colcon.colcon_core.shell:Creating prefix util module '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/_local_setup_util_ps1.py'
+[3.477s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/setup.ps1'
+[3.478s] INFO:colcon.colcon_core.shell:Creating prefix script '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/local_setup.sh'
+[3.479s] INFO:colcon.colcon_core.shell:Creating prefix util module '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/_local_setup_util_sh.py'
+[3.480s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/setup.sh'
+[3.481s] INFO:colcon.colcon_core.shell:Creating prefix script '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/local_setup.bash'
+[3.482s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/setup.bash'
+[3.483s] INFO:colcon.colcon_core.shell:Creating prefix script '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/local_setup.zsh'
+[3.484s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/install/setup.zsh'

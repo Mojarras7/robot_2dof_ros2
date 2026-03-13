@@ -1,0 +1,3 @@
+[console_scripts]
+control_node = control.control_node:main
+inverse_kinematic = control.inverse_kinematic:main

@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from two_dof_interfaces/srv/CoordinateToJoint.srv
+// generated code does not contain a copyright notice
+
+
+module two_dof_interfaces {
+  module srv {
+    struct CoordinateToJoint_Request {
+      double x;
+
+      double y;
+    };
+    struct CoordinateToJoint_Response {
+      double theta1;
+
+      double theta2;
+
+      boolean success;
+
+      string message;
+    };
+  };
+};
