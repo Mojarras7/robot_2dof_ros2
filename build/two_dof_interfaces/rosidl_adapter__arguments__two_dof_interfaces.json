@@ -1,6 +1,0 @@
-{
-  "package_name": "two_dof_interfaces",
-  "non_idl_tuples": [
-    "/media/mojarras/Wiwi/sinFiltro/robot_2dof_ros2/two_dof_interfaces:srv/CoordinateToJoint.srv"
-  ]
-}

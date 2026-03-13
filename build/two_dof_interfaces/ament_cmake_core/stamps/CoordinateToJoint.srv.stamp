@@ -1,7 +1,0 @@
-float64 x
-float64 y
----
-float64 theta1
-float64 theta2
-bool success
-string message

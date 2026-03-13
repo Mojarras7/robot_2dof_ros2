@@ -1,8 +1,0 @@
-setup.py
-two_dof_interfaces/__init__.py
-two_dof_interfaces.egg-info/PKG-INFO
-two_dof_interfaces.egg-info/SOURCES.txt
-two_dof_interfaces.egg-info/dependency_links.txt
-two_dof_interfaces.egg-info/top_level.txt
-two_dof_interfaces/srv/__init__.py
-two_dof_interfaces/srv/_coordinate_to_joint.py
